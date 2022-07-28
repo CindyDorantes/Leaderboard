@@ -1,3 +1,46 @@
 body {
-    background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 15% 0 15%;
+}
+
+.arrangeDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#scoreboard {
+  width: 55%;
+  padding: 5vw;
+}
+
+#addScore {
+  width: 45%;
+  padding: 5vw;
+}
+
+.titleRefresh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btnRefresh {
+  height: 2em;
+}
+
+#addForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#addForm input {
+  margin: 8px 0;
+  width: calc(100% - 8px);
+}
+
+#btnSubmit {
+  width: 50%;
+  align-self: flex-end;
+  margin: 8px 0;
 }
