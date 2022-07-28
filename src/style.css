@@ -37,12 +37,12 @@ body {
   border-radius: 5px;
 }
 
-#scoresTable > li:nth-of-type(odd) {
-  background-color: lightgrey ;
+#scoresTable li {
+  padding: 0.5em 1em;
 }
 
-#scoresTable li {
-  padding: .5em 1em;
+#scoresTable > li:nth-of-type(odd) {
+  background-color: lightgrey;
 }
 
 #addForm {
