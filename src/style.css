@@ -29,6 +29,22 @@ body {
   height: 2em;
 }
 
+#scoresTable {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#scoresTable > li:nth-of-type(odd) {
+  background-color: lightgrey ;
+}
+
+#scoresTable li {
+  padding: .5em 1em;
+}
+
 #addForm {
   display: flex;
   flex-direction: column;
