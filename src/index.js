@@ -1,6 +1,6 @@
 import './style.css';
-import post from './modules/post-score';
-import get from './modules/get-score';
+import post from './modules/post-score.js';
+import get from './modules/get-score.js';
 
 const scoresTable = document.getElementById('scoresTable');
 const addForm = document.getElementById('addForm');
@@ -13,9 +13,9 @@ addForm.addEventListener('submit', (event) => {
 
   post(playerName, playerScore);
   addForm.reset();
-})
+});
 
 btnRefresh.addEventListener('click', () => {
   scoresTable.innerHTML = '';
   get();
-})
+});

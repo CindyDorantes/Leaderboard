@@ -5,12 +5,12 @@ const post = (playerName, playerScore) => {
     method: 'POST',
     body: JSON.stringify({
       user: playerName,
-      score: playerScore
+      score: playerScore,
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
-  })
-}
+  });
+};
 
 export default post;
