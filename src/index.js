@@ -1,27 +1,21 @@
 import './style.css';
-import display from './modules/score-class.js';
+import post from './modules/post-score.js';
+import get from './modules/get-score.js';
 
-const scoresData = [
-  {
-    name: 'Oscar',
-    score: 100,
-  },
-  {
-    name: 'Jennifer',
-    score: 98,
-  },
-  {
-    name: 'Mike',
-    score: 70,
-  },
-  {
-    name: 'Laura',
-    score: 100,
-  },
-  {
-    name: 'Simon',
-    score: 82,
-  },
-];
+const scoresTable = document.getElementById('scoresTable');
+const addForm = document.getElementById('addForm');
+const btnRefresh = document.getElementById('btnRefresh');
 
-scoresData.forEach(display);
+addForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const playerName = document.getElementById('inputName').value;
+  const playerScore = document.getElementById('inputScore').value;
+
+  post(playerName, playerScore);
+  addForm.reset();
+});
+
+btnRefresh.addEventListener('click', () => {
+  scoresTable.innerHTML = '';
+  get();
+});
