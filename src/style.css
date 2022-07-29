@@ -1,6 +1,86 @@
+@font-face {
+  font-family: Audiowide;
+  src: url('./resources/Audiowide-Regular.ttf');
+}
+
+@font-face {
+  font-family: Electrolize;
+  src: url('./resources/Electrolize-Regular.ttf');
+}
+
+@font-face {
+  font-family: Changa;
+  src: url('./resources/Changa-VariableFont_wght.ttf');
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0 15% 0 15%;
+  background-image: url('./resources/purpleBG02.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: plum;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+#main-title {
+  text-align: center;
+  font-family: Audiowide, sans-serif;
+  text-transform: uppercase;
+  background-image:
+    linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+h2 {
+  font-family: Audiowide, sans-serif;
+}
+
+button {
+  font-family: Electrolize, sans-serif;
+  display: inline-block;
+  padding: 0.7em 1.4em;
+  margin: 0 0.3em 0.3em 0;
+  border: none;
+  border-radius: 0.15em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: plum;
+  background-color: #44107a;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+button:active {
+  top: 0.1em;
 }
 
 .arrangeDisplay {
@@ -10,13 +90,13 @@ body {
 }
 
 #scoreboard {
-  width: 55%;
-  padding: 5vw;
+  width: 60%;
+  padding: 0 5vw;
 }
 
 #addScore {
-  width: 45%;
-  padding: 5vw;
+  width: 40%;
+  padding: 0 5vw;
 }
 
 .titleRefresh {
@@ -25,24 +105,34 @@ body {
   align-items: center;
 }
 
-#btnRefresh {
-  height: 2em;
-}
-
 #scoresTable {
+  border: 3px solid goldenrod;
   text-decoration: none;
   list-style-type: none;
   padding: 0;
-  border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 #scoresTable li {
+  font-family: Changa, sans-serif;
   padding: 0.5em 1em;
+  margin: 1em;
+  background-color: #44107a;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+  color: ivory;
 }
 
 #scoresTable > li:nth-of-type(odd) {
-  background-color: lightgrey;
+  background-color: #671081;
+}
+
+#scoresTable li:hover {
+  box-shadow:
+    rgba(240, 46, 170, 0.4) -3px 3px,
+    rgba(240, 46, 170, 0.3) -6px 6px,
+    rgba(240, 46, 170, 0.2) -9px 9px,
+    rgba(240, 46, 170, 0.1) -12px 12px,
+    rgba(240, 46, 170, 0.05) -15px 15px;
 }
 
 #addForm {
@@ -51,8 +141,14 @@ body {
 }
 
 #addForm input {
+  font-family: Changa, sans-serif;
   margin: 8px 0;
+  padding: 8px;
   width: calc(100% - 8px);
+  background-color: black;
+  color: white;
+  border: 1px solid plum;
+  border-radius: 5px;
 }
 
 #btnSubmit {
