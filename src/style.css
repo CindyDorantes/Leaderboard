@@ -30,23 +30,19 @@ header {
 
 #main-title {
   text-align: center;
-  font-size: 50px;
   font-family: Audiowide, sans-serif;
-}
-
-#main-title {
   text-transform: uppercase;
-  background-image: linear-gradient(-225deg,
+  background-image:
+    linear-gradient(
+      -225deg,
       #231557 0%,
       #44107a 29%,
       #ff1361 67%,
-      #fff800 100%);
-  background-size: auto auto;
-  background-clip: border-box;
+      #fff800 100%
+    );
   background-size: 200% auto;
   color: #fff;
-  background-clip: text;
-  /*text-fill-color: transparent;*/
+  background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 5s linear infinite;
@@ -95,7 +91,7 @@ button:active {
 
 #scoreboard {
   width: 60%;
-  padding: 0 5vw;  
+  padding: 0 5vw;
 }
 
 #addScore {
@@ -118,20 +114,21 @@ button:active {
 }
 
 #scoresTable li {
-  font-family: Changa;
+  font-family: Changa, sans-serif;
   padding: 0.5em 1em;
   margin: 1em;
   background-color: #44107a;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
   color: ivory;
 }
 
-#scoresTable>li:nth-of-type(odd) {
+#scoresTable > li:nth-of-type(odd) {
   background-color: #671081;
 }
 
 #scoresTable li:hover {
-  box-shadow: rgba(240, 46, 170, 0.4) -3px 3px,
+  box-shadow:
+    rgba(240, 46, 170, 0.4) -3px 3px,
     rgba(240, 46, 170, 0.3) -6px 6px,
     rgba(240, 46, 170, 0.2) -9px 9px,
     rgba(240, 46, 170, 0.1) -12px 12px,
@@ -144,7 +141,7 @@ button:active {
 }
 
 #addForm input {
-  font-family: Changa;
+  font-family: Changa, sans-serif;
   margin: 8px 0;
   padding: 8px;
   width: calc(100% - 8px);
