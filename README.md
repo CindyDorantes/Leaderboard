@@ -11,7 +11,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ## Live Demo 
 
-[Live Demo Link](https://cindydorantes.github.io/Leaderboard/docs)
+[Live Demo Link](https://cindydorantes.github.io/Leaderboard)
 
 
 ## GETTING STARTED
