@@ -1,2 +1,4 @@
 node_modules
-./notes.txt
+notes.txt
+node_modules
+game-id.js

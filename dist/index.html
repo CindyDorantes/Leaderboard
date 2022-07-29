@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
 <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+
 <body>
-    <header>
-        <h1>Leaderboard</h1>
-    </header>
+  <header>
+    <h1>Leaderboard</h1>
+  </header>
+  <div class="arrangeDisplay">
     <section id="scoreboard">
+      <div class="titleRefresh">
         <h2>Recent scores</h2>
-        <button type="button">Refresh</button>
-        <ul id="scoresTable">
-            <!-- Insert here the elements created with JS -->
-        </ul>
+        <button type="button" id="btnRefresh">Refresh</button>
+      </div>
+      <ul id="scoresTable">
+        <!-- Insert here the elements created with JS -->
+      </ul>
     </section>
     <section id="addScore">
-        <h2>
-            Add your score
-        </h2>
-        <form id="addForm">
-            <input type="text" placeholder="Your name" id="inputName" required>
-            <input type="text" placeholder="Your score" id="inputScore" required>
-            <button type="submit"></button>
-        </form>
+      <h2>
+        Add your score
+      </h2>
+      <form id="addForm">
+        <input type="text" placeholder="Your name" id="inputName" required>
+        <input type="text" placeholder="Your score" id="inputScore" required>
+        <button type="submit" id="btnSubmit">Submit</button>
+      </form>
     </section>
-    
+  </div>
+
 </body>
+
 </html>
