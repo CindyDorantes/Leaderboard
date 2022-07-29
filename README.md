@@ -50,6 +50,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Thanks to Microverse and my learning partners for their help and support.
+- Federico Dossena's [Cool and responsive buttons](https://fdossena.com/?p=html5cool/buttons/i.frag).
+- Backgroung image by [rawpixel.com](https://www.rawpixel.com/image/2409935/free-illustration-vector-arcade-border-triangle).
 
 
 ## 📝 License

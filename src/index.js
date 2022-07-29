@@ -17,5 +17,6 @@ addForm.addEventListener('submit', (event) => {
 
 btnRefresh.addEventListener('click', () => {
   scoresTable.innerHTML = '';
+  console.log('el eventlistener funciona');
   get();
 });
